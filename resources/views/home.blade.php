@@ -22,7 +22,7 @@
                 <h3 class="text-3xl">Create a new post:</h2>
 
                     <form action="/create-post" method="post">
-
+                        @csrf
                         <input type="text" name="title" placeholder="Post title"
                             class="block my-2 p-2 border-2 border-zinc-800 text-zinc-800 rounded-md">
                         <textarea name="body" placeholder="Body content..."
@@ -30,7 +30,6 @@
                         <button
                             class="block my-2 mb-6 p-2 border-2 border-zinc-800 text-slate-50 bg-zinc-800 rounded-md">Save
                             Post</button>
-
                     </form>
             </div>
         @else
@@ -60,7 +59,7 @@
                     <input name="loginpassword" type="password" placeholder="password"
                         class="block my-2 p-2 border-2 border-zinc-800 text-zinc-800 rounded-md">
                     <button type="submit"
-                        class="block my-2 mb-6 p-2 border-2 border-zinc-800 text-slate-50 bg-zinc-800 rounded-md">Register</button>
+                        class="block my-2 mb-6 p-2 border-2 border-zinc-800 text-slate-50 bg-zinc-800 rounded-md">Login</button>
                 </form>
             </div>
         @endauth
